@@ -1,0 +1,22 @@
+    <head>
+        <meta charset="utf-8">
+        <title>Chasing Seasons</title>
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD_9OJYQF2JTdLrgp8zlCXUfkjqKBjLDXU&sensor=false&libraries=visualization"></script>
+    </head>
+    <body>
+        {{> options}}
+        {{> map}}
+    </body>
+
+    <template name="options">
+        <div id="options">
+            <button class="surf">Surf</button>
+            <button class="snow">Snow</button>
+            <button class="rock">Rock</button>
+            <button class="trail">Trail</button>
+        </div>
+    </template>
+
+    <template name="map">
+        <div id="map-canvas"></div>
+    </template>
